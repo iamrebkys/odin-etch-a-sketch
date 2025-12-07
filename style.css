@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: min(90vmin, 960px); /*the smaller of 90% of viewport min dimension or 960px*/
+    height: min(90vmin, 960px); 
+}
+
+.grid-square {
+    box-sizing: border-box; /* Include border in size */
+    border: 1px solid #ddd;
+    background-color: white;
+    aspect-ratio: 1 / 1; /* Ensures squares */
+}
+
+form {
+    margin: 20px;
+}
